@@ -7,8 +7,8 @@ const seconds = timeNodes
     .map(timeCode => {
         const [mins, secs] = timeCode.split(':').map(parseFloat);
         return (mins * 60) + secs;
-    });
-    reduce((total, vidSeconds) => total + vidSeconds);
+    })
+    .reduce((total, vidSeconds) => total + vidSeconds);
 
 
 
